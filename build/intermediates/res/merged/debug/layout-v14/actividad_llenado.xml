@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:weightSum="1"
+    android:padding="10dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="467dp"
+        android:layout_height="350dp"
+        android:id="@+id/frameLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <FrameLayout
+            android:layout_width="424dp"
+            android:layout_height="144dp"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:elevation="10dp"
+            android:background="#f4f4f4"
+            android:layout_gravity="left|top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Recipiente:"
+                android:id="@+id/textView4"
+                android:textColor="#000000"
+                android:layout_gravity="left|top"
+                android:textSize="25dp" />
+
+            <TextView
+                android:layout_width="107dp"
+                android:layout_height="wrap_content"
+                android:text="Codigo de Barras:"
+                android:id="@+id/textView"
+                android:layout_gravity="left|bottom"
+                android:textColor="#1a0000"
+                android:textSize="15dp"
+                android:padding="10dp" />
+
+            <Button
+                android:layout_width="105dp"
+                android:layout_height="83dp"
+                android:id="@+id/x_codigobarras"
+                android:layout_gravity="right|bottom"
+                android:background="@drawable/barcodes" />
+
+            <EditText
+                android:layout_width="156dp"
+                android:layout_height="52dp"
+                android:id="@+id/x_codigobarrascapturado"
+                android:layout_gravity="center_horizontal|bottom"
+                android:background="#ffffff"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:editable="false"
+                android:focusable="false" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="430dp"
+            android:layout_height="160dp"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:layout_weight="0.36"
+            android:layout_gravity="left|bottom"
+            android:elevation="10dp"
+            android:background="#f4f4f4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Llenado:"
+                android:id="@+id/textView5"
+                android:layout_gravity="left|top"
+                android:textColor="#000000"
+                android:textSize="25dp"
+                android:textIsSelectable="false" />
+
+            <TextView
+                android:layout_width="93dp"
+                android:layout_height="wrap_content"
+                android:text="Lote:"
+                android:id="@+id/textView2"
+                android:layout_gravity="center_horizontal|top"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:padding="10dp" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"
+                android:inputType="number"
+                android:ems="10"
+                android:id="@+id/x_lote"
+                android:layout_gravity="right|top"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:background="#ffffff" />
+
+            <Spinner
+                android:layout_width="165dp"
+                android:layout_height="45dp"
+                android:id="@+id/x_estacion"
+                android:layout_gravity="right|bottom"
+                android:background="#000000"
+                android:textAlignment="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="67dp"
+                android:text="Estacion:"
+                android:id="@+id/textView3"
+                android:layout_gravity="center_horizontal|bottom"
+                android:textColor="#000000"
+                android:textSize="15dp"
+                android:padding="10dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registrar Llenado"
+                android:id="@+id/x_registrarllenado"
+                android:padding="10dp"
+                android:layout_gravity="left|bottom"
+                android:elevation="10dp"
+                android:background="#5d75f5" />
+
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="450dp"
+        android:layout_height="350dp"
+        android:padding="5dp"
+        android:id="@+id/frameLayout2"
+        android:layout_below="@+id/imageView4"
+        android:layout_toRightOf="@+id/frameLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:layout_gravity="left|bottom"
+            android:background="#f4f4f4">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="400dp"
+                    android:layout_height="50dp"
+                    android:contextClickable="false"
+                    android:layout_column="0">
+
+                    <TextView
+                        android:layout_width="124dp"
+                        android:layout_height="wrap_content"
+                        android:text="Tara impresa:"
+                        android:id="@+id/textView9"
+                        android:layout_gravity="left|center_vertical"
+                        android:textColor="#1a0000"
+                        android:textSize="12dp"
+                        android:padding="10dp" />
+
+                    <EditText
+                        android:layout_width="173dp"
+                        android:layout_height="32dp"
+                        android:id="@+id/x_taraimpresa"
+                        android:layout_gravity="center"
+                        android:background="#ffffff"
+                        android:textColor="#0238c2"
+                        android:textSize="20dp"
+                        android:textAlignment="textEnd"
+                        android:focusable="false"
+                        android:editable="false" />
+
+                </FrameLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="400dp"
+                    android:layout_height="50dp"
+                    android:contextClickable="false"
+                    android:layout_column="0" >
+
+                    <TextView
+                        android:layout_width="135dp"
+                        android:layout_height="wrap_content"
+                        android:text="Capacidad Cloro:"
+                        android:id="@+id/textView10"
+                        android:layout_gravity="left|center_vertical"
+                        android:textColor="#1a0000"
+                        android:textSize="12dp"
+                        android:padding="10dp" />
+
+                    <EditText
+                        android:layout_width="175dp"
+                        android:layout_height="32dp"
+                        android:id="@+id/x_cloro"
+                        android:layout_gravity="center"
+                        android:background="#ffffff"
+                        android:textColor="#0238c2"
+                        android:textSize="20dp"
+                        android:textAlignment="textEnd"
+                        android:focusable="false"
+                        android:editable="false" />
+
+                </FrameLayout>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="223dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:id="@+id/tableLayout"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/frameLayout"
+            android:layout_gravity="left|top"
+            android:background="#f4f4f4">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:contextClickable="false"
+                    android:focusable="false">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Numero de serie:"
+                        android:id="@+id/textView6"
+                        android:layout_gravity="left|center_vertical"
+                        android:textColor="#1a0000"
+                        android:textSize="15dp"
+                        android:padding="10dp" />
+
+                    <EditText
+                        android:layout_width="123dp"
+                        android:layout_height="32dp"
+                        android:id="@+id/x_numserie"
+                        android:layout_gravity="center"
+                        android:background="#ffffff"
+                        android:textColor="#0238c2"
+                        android:textSize="20dp"
+                        android:textAlignment="textEnd"
+                        android:inputType="text"
+                        android:editable="false"
+                        android:focusable="false" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/x_checknumeroserie"
+                        android:layout_gravity="right|center_vertical"
+                        android:checked="false" />
+                </FrameLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:contextClickable="false" >
+
+                    <EditText
+                        android:layout_width="123dp"
+                        android:layout_height="32dp"
+                        android:id="@+id/x_tarareal"
+                        android:layout_gravity="center"
+                        android:background="#ffffff"
+                        android:textColor="#0238c2"
+                        android:textSize="20dp"
+                        android:textAlignment="textEnd"
+                        android:inputType="text"
+                        android:focusable="false"
+                        android:editable="false" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tara real:"
+                        android:id="@+id/textView7"
+                        android:layout_gravity="left|center_vertical"
+                        android:textColor="#1a0000"
+                        android:textSize="15dp"
+                        android:padding="10dp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/x_chtarareal"
+                        android:layout_gravity="right|center_vertical"
+                        android:checked="false" />
+                </FrameLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="400dp"
+                    android:layout_height="60dp"
+                    android:contextClickable="false" >
+
+                    <EditText
+                        android:layout_width="123dp"
+                        android:layout_height="32dp"
+                        android:id="@+id/x_pruebahidro"
+                        android:layout_gravity="center"
+                        android:background="#ffffff"
+                        android:textColor="#0238c2"
+                        android:textSize="20dp"
+                        android:textAlignment="textEnd"
+                        android:focusable="false"
+                        android:editable="false" />
+
+                    <TextView
+                        android:layout_width="131dp"
+                        android:layout_height="wrap_content"
+                        android:text="Prueba Hidrostatica:"
+                        android:id="@+id/textView8"
+                        android:layout_gravity="left|center_vertical"
+                        android:textColor="#1a0000"
+                        android:textSize="15dp"
+                        android:padding="10dp" />
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/x_chhidro"
+                        android:layout_gravity="right|center_vertical"
+                        android:checked="false" />
+                </FrameLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:layout_width="400dp"
+                    android:layout_height="60dp"
+                    android:contextClickable="false"
+                    android:layout_column="0">
+
+                    <EditText
+                        android:layout_width="123dp"
+                        android:layout_height="32dp"
+                        android:id="@+id/x_siguientePrueba"
+                        android:layout_gravity="center"
+                        android:background="#ffffff"
+                        android:textColor="#0238c2"
+                        android:textSize="20dp"
+                        android:textAlignment="textEnd"
+                        android:focusable="false"
+                        android:editable="false" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Siguiente Prueba:"
+                        android:id="@+id/textView11"
+                        android:layout_gravity="left|center_vertical"
+                        android:textColor="#1a0000"
+                        android:textSize="15dp"
+                        android:padding="10dp" />
+
+                </FrameLayout>
+            </TableRow>
+
+        </TableLayout>
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:id="@+id/imageView3"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/frameLayout"
+        android:background="@drawable/quimpac" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:layout_above="@+id/frameLayout"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/banner"
+        android:layout_toRightOf="@+id/imageView3"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="60dp"
+        android:layout_height="115dp"
+        android:id="@+id/x_advertenciaimg"
+        android:layout_gravity="right|bottom"
+        android:background="@drawable/advertencia"
+        android:visibility="invisible"
+        android:layout_above="@+id/frameLayout2"
+        android:layout_alignRight="@+id/imageView4"
+        android:layout_alignEnd="@+id/imageView4"
+        android:layout_alignTop="@+id/x_addvertenciatexto" />
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Requiere prueba hidrostatica"
+        android:id="@+id/x_addvertenciatexto"
+        android:layout_gravity="right|bottom"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textAlignment="viewStart"
+        android:visibility="invisible"
+        android:padding="10dp"
+        android:layout_above="@+id/frameLayout2"
+        android:layout_toLeftOf="@+id/x_advertenciaimg" />
+
+</RelativeLayout><!-- From: file:/C:/Users/mpalomar/Desktop/BarCodeScanner/QuinpacApp/app/src/main/res/layout-v14/actividad_llenado.xml -->

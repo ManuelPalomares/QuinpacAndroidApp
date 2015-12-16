@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<EasyWSDL>
+  <Info>
+    <Version>4.1.9.1</Version>
+    <AccountType>Basic</AccountType>
+    <LibrariesFolder>libs/easywsdl</LibrariesFolder>
+  </Info>
+  <Settings>
+    <Url>http://10.1.1.250:1080/sap/bc/srt/wsdl/bndg_5656AD0FE9963B4FE10000000A0101F7/wsdl11/allinone/ws_policy/document?sap-client=400</Url>
+    <ClassPrefix/>
+    <PackageName>com.web.webmapsoft.clientews</PackageName>
+    <AddDocumentation>false</AddDocumentation>
+    <EnableAdvancedFeatures>false</EnableAdvancedFeatures>
+    <EnableMTOM>false</EnableMTOM>
+    <EncodeIllegalCharacters>true</EncodeIllegalCharacters>
+    <GenerateAsyncOperations>true</GenerateAsyncOperations>
+    <ImplementSerializable>false</ImplementSerializable>
+    <AddAnyCollection>false</AddAnyCollection>
+    <UseJodaTime>false</UseJodaTime>
+  </Settings>
+  <Files>
+    <File>NLIBINDING_SIBTC.java</File>
+    <File>NLIExtendedSoapSerializationEnvelope.java</File>
+    <File>NLIFunctions.java</File>
+    <File>NLIHelper.java</File>
+    <File>NLIIServiceEvents.java</File>
+    <File>NLIMarshalGuid.java</File>
+    <File>NLIOperationResult.java</File>
+    <File>NLIZFmPmRfcWssibtcResponse.java</File>
+    <File>NLIZstPmDataSibtc.java</File>
+  </Files>
+  <Libraries>
+    <File>ksoap2-android-assembly-3.6.0-jar-with-dependencies.jar</File>
+  </Libraries>
+</EasyWSDL>

@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.1"
+
+    defaultConfig {
+        applicationId "com.web.webmapsoft.barcodescanner"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:support-v4:23.0.1'
+    // Important - the CameraSource implementation in this project requires version 8.1 or higher.
+    compile 'com.google.android.gms:play-services:8.1.0'
+    compile 'com.android.support:design:23.0.1'
+    compile files('libs/easywsdl/ksoap2-android-assembly-3.6.0-jar-with-dependencies.jar')
+}

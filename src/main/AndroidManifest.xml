@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.web.webmapsoft.barcodescanner" >
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="false"
+        android:hardwareAccelerated="true"
+        android:label="SIBTC QUIMPAC DE COLOMBIA S.A."
+        android:supportsRtl = "true"
+        android:theme="@style/Theme.AppCompat"
+        >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <activity
+            android:name=".ActividadPrincipal"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".BarcodeCaptureActivity"
+            android:label="Leer Codigo de Barras"/>
+
+        <activity android:name=".ActividadLlenado" android:label="SIBTC QUIMPAC DE COLOMBIA S.A. LLENADO"/>
+        <activity android:name=".ActividadActualizarTara" android:label="SIBTC QUIMPAC DE COLOMBIA S.A. ACTUALIZAR TARA"/>
+        <activity android:name=".ActividadActualizarCodigoBar" android:label="SIBTC QUIMPAC DE COLOMBIA S.A. ACTUALIZAR CODIGO BARRA"/>
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fefefe"
+    android:stretchColumns="10">
+
+    <ImageView
+        android:layout_width="700dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/banner"
+        android:layout_column="2"
+        android:layout_span="18"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:background="@drawable/quimpac"
+        android:layout_above="@+id/x_usuario"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/x_usuario"
+        android:textColor="#000000"
+        android:background="#e5e3e3"
+        android:layout_marginTop="43dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignRight="@+id/imageView"
+        android:layout_alignEnd="@+id/imageView"
+        android:focusable="true"
+        android:editable="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/x_password"
+        android:layout_below="@+id/x_usuario"
+        android:layout_alignLeft="@+id/x_usuario"
+        android:layout_alignStart="@+id/x_usuario"
+        android:layout_marginTop="37dp"
+        android:layout_alignRight="@+id/x_usuario"
+        android:layout_alignEnd="@+id/x_usuario"
+        android:background="#e5e3e3"
+        android:textColor="#000000" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresar"
+        android:id="@+id/x_botonlogin"
+        android:layout_toRightOf="@+id/x_password"
+        android:layout_marginLeft="46dp"
+        android:layout_marginStart="46dp"
+        android:layout_alignBottom="@+id/x_password"
+        android:layout_alignTop="@+id/x_usuario"
+        android:background="#5d75f5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Usuario:"
+        android:id="@+id/textView13"
+        android:textColor="#000000"
+        android:layout_above="@+id/x_password"
+        android:layout_toLeftOf="@+id/x_usuario"
+        android:layout_toStartOf="@+id/x_usuario"
+        android:layout_marginRight="44dp"
+        android:layout_marginEnd="44dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Clave:"
+        android:id="@+id/textView14"
+        android:textColor="#000000"
+        android:layout_alignBottom="@+id/x_password"
+        android:layout_alignRight="@+id/textView13"
+        android:layout_alignEnd="@+id/textView13" />
+
+</RelativeLayout><!-- From: file:/C:/Users/mpalomar/Desktop/BarCodeScanner/QuinpacApp/app/src/main/res/layout/actividad_login.xml -->
